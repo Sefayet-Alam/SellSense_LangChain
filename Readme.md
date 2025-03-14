@@ -4,7 +4,7 @@
 
 This project is a full-stack application designed to facilitate communication between customers and sellers. The application enables customers to chat with sellers, view reviews based on conversations, and allows sellers to engage with customers in a one-ended chat environment. The backend leverages AI-powered language processing (LangChain) to generate conversation summaries and store them as reviews.
 
-
+<img src="https://github.com/Sefayet-Alam/SellSense_LangChain/blob/master/AI.png">
 
 ## Features
 
