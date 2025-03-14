@@ -1,0 +1,85 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #121212; /* Sleek Dark Theme */
+  padding: 12px 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Logo */
+.brand-large {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f8f9fa; /* Light Color for Visibility */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.brand-large:hover {
+  color: #ffd700; /* Gold Hover Effect */
+}
+
+/* Navbar Links */
+.navbar-nav {
+  margin-left: auto; /* Keeps links on the right */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 12px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 15px;
+  position: relative;
+}
+
+/* Underline effect on hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #ffd700;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700; /* Gold Hover Effect */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Mobile Toggle */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    background: #1b1b1b;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 12px;
+    display: block;
+  }
+}

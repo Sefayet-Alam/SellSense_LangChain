@@ -1,0 +1,81 @@
+/* Main Container */
+.reviews-container {
+    background-color: #e6e6e6; /* Classy ash-gray background */
+    padding: 40px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Title */
+.reviews-container h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Styled Review Cards */
+.styled-review-card {
+    background: linear-gradient(135deg, #f8f9fa, #c3c6cb);
+    border-left: 6px solid #34495e;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
+    color: #2c3e50;
+    text-align: left; /* Align text to the left */
+    line-height: 1.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.styled-review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Preserve formatting for multiline reviews */
+.formatted-review {
+    white-space: pre-wrap;
+    font-family: inherit;
+    margin-top: 5px;
+}
+
+/* Bold points */
+.formatted-review p strong {
+    color: #34495e;
+}
+
+/* Overall Review Section */
+.overall-review-container {
+    margin-top: 40px;
+}
+
+.overall-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Layout and Spacing */
+.row {
+    margin-top: 20px;
+}
+
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .reviews-container {
+        padding: 20px;
+    }
+
+    .styled-review-card {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}

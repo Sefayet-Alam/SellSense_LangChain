@@ -1,0 +1,139 @@
+/* General Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    min-height: 100vh; /* Ensure the container takes full height */
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8; /* Light background color */
+}
+
+/* Title */
+.chat-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Box - Glassmorphism */
+.chat-box {
+    width: 90%;
+    max-width: 1300px;
+    padding: 20px;
+    min-height: 500px; /* Ensure a minimum height for chat box */
+    max-height: 700px;
+    overflow-y: auto;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background for readability */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-image: url('chat3.webp'); /* Background image */
+    background-size: cover; /* Ensure image covers entire chat */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed */
+}
+
+/* Scrollbar */
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+/* Chat Messages */
+.chat-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.chat-message.seller {
+    justify-content: flex-end;
+}
+
+.chat-message.customer {
+    justify-content: flex-start;
+}
+
+/* Chat Bubble */
+.chat-message p {
+    padding: 12px 16px;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Seller Message */
+.chat-message.seller p {
+    background: linear-gradient(to right, #484a4c, #6c777d);
+    color: white;
+    border-radius: 20px 20px 0 20px;
+}
+
+/* Customer Message */
+.chat-message.customer p {
+    background: linear-gradient(to right, #116333, #27ae60);
+    color: white;
+    border-radius: 20px 20px 20px 0;
+}
+
+/* Input Section */
+.input-container {
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Input Field */
+.input-field {
+    width: 48%;
+}
+
+/* Input Boxes */
+.customer-container input,
+.seller-container textarea {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    outline: none;
+}
+
+.customer-container input::placeholder,
+.seller-container textarea::placeholder {
+    color: #bdc3c7;
+}
+
+/* Button Style */
+.input-container button {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* Background Image Styling */
+.chat-image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
